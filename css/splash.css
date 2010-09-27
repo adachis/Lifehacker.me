@@ -4,14 +4,14 @@
 {
 	font-family: 'HelveticaNeueRegular';
 	src: url('../fonts/HelveticaNeue.eot');
-	src: local('Helvetica Neue Bold'), local('HelveticaNeue'), url('HelveticaNeue.woff') format('woff'), url('HelveticaNeue.ttf') format('truetype');
+	src: local('Helvetica Neue Bold'), local('HelveticaNeue'), url('../fonts/HelveticaNeue.woff') format('woff'), url('../fonts/HelveticaNeue.ttf') format('truetype');
 }
 
 @font-face
 {
 	font-family: 'HelveticaNeueCondensedBold';
 	src: url('../fonts/HelveticaNeue-CondensedBold.eot');
-	src: local('HelveticaNeue-CondensedBold'), local('HelveticaNeue-CondensedBold'), url('HelveticaNeue-CondensedBold.woff') format('woff'), url('HelveticaNeue-CondensedBold.ttf') format('truetype');
+	src: local('HelveticaNeue-CondensedBold'), local('HelveticaNeue-CondensedBold'), url('../fonts/HelveticaNeue-CondensedBold.woff') format('woff'), url('../fonts/HelveticaNeue-CondensedBold.ttf') format('truetype');
 }
 
 body
