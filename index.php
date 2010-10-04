@@ -138,9 +138,9 @@ if (isset($accounts['twitter']['username']) && $accounts['twitter']['username'] 
 		<p><?=$general['about_me']; ?></p>
 	</div>
 	
+	<? if ($flickr_on == true) { ?>
 	<div id="photos" class="content_bubble">
 		<h3><? if (isset($general['first_name']) && $general['first_name'] != '') {echo strtolower($general['first_name'])."'s ";} ?>photos</h3>
-		<? if ($flickr_on == true) { ?>
 		<p>
 			<div id="galleria">Loading...</div> 
 			<script>
@@ -162,9 +162,9 @@ if (isset($accounts['twitter']['username']) && $accounts['twitter']['username'] 
 		<p id="more">
 			<a href="http://flickr.com/photos/<?=$accounts['flickr']['username'] ?>">More...</a>
 		</p>
-		<? } ?>
 	</div>
-	
+	<? } ?>
+
 	<div id="videos" class="content_bubble">
 		<? if ($video_bubble == true) { ?>
 		<h3><? if (isset($general['first_name']) && $general['first_name'] != '') {echo strtolower($general['first_name'])."'s ";} ?>videos</h3>
