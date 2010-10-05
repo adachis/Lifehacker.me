@@ -141,7 +141,7 @@ div#about
 }
 div#photos
 {
-	display: inline;
+	display: none;
 }
 div#videos
 {
