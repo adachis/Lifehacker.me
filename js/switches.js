@@ -1,6 +1,7 @@
 function switchto(elem)
 {
-	document.getElementById('about').style.display = document.getElementById('photos').style.display = document.getElementById('videos').style.display = document.getElementById('twitter').style.display = 'none';
+	$(".content_bubble").css("display", "none");
+	//document.getElementById('about').style.display = document.getElementById('photos').style.display = document.getElementById('videos').style.display = document.getElementById('twitter').style.display = 'none';
 	document.getElementById(elem).style.display = 'inline';
 	if (elem == 'about')
 	{

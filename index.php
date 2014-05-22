@@ -138,9 +138,9 @@ if (isset($accounts['twitter']['username']) && $accounts['twitter']['username'] 
 		<p><?=$general['about_me']; ?></p>
 	</div>
 	
+	<? if ($flickr_on == true) { ?>
 	<div id="photos" class="content_bubble">
 		<h3><? if (isset($general['first_name']) && $general['first_name'] != '') {echo strtolower($general['first_name'])."'s ";} ?>photos</h3>
-		<? if ($flickr_on == true) { ?>
 		<p>
 			<div id="galleria">Loading...</div> 
 			<script>
@@ -162,11 +162,11 @@ if (isset($accounts['twitter']['username']) && $accounts['twitter']['username'] 
 		<p id="more">
 			<a href="http://flickr.com/photos/<?=$accounts['flickr']['username'] ?>">More...</a>
 		</p>
-		<? } ?>
 	</div>
-	
+	<? } ?>
+
+	<? if ($video_bubble == true) { ?>
 	<div id="videos" class="content_bubble">
-		<? if ($video_bubble == true) { ?>
 		<h3><? if (isset($general['first_name']) && $general['first_name'] != '') {echo strtolower($general['first_name'])."'s ";} ?>videos</h3>
 		<?
 		if (isset($general['about_videos']) && $general['about_videos'] != '')
@@ -209,15 +209,15 @@ if (isset($accounts['twitter']['username']) && $accounts['twitter']['username'] 
 			</div>
 			<? } ?>
 		</p>
-		<? } ?>
 	</div>
+	<? } ?>
 	
+	<? if ($twitter_on == true) { ?>
 	<div id="twitter" class="content_bubble">
 		<h3><? if (isset($general['first_name']) && $general['first_name'] != '') {echo strtolower($general['first_name'])."'s ";} ?>tweets</h3>
 
 		<p>
 			<div id ="twitter_feed">
-				<? if ($twitter_on == true) { ?>
 				<?
 				foreach ($twitter_simple_xml->status as $tweet)
 				{
@@ -227,10 +227,10 @@ if (isset($accounts['twitter']['username']) && $accounts['twitter']['username'] 
 				<p id="more">
 					<a href="http://twitter.com/<?=$accounts['twitter']['username'] ?>">More...</a>
 				</p>
-				<? } ?>
 			</div>
 		</p>
 	</div>
+	<? } ?>
 	
 	<div id="footer">
 		Lifehacker.me by <a href="http://lifehacker.com">Lifehacker</a>.
